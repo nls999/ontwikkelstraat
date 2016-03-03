@@ -6,6 +6,7 @@
 
 import org.junit.After;
 import org.junit.AfterClass;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -35,10 +36,28 @@ public class OntwikkelstraatTest {
     @After
     public void tearDown() {
     }
+    
+    @Test
+    public void test() {
+        TestClass test = new TestClass();
+         Assert.assertEquals("1", test.doIets(1));
+    }
 
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
     // @Test
     // public void hello() {}
+
+    private static class TestClass {
+
+        public TestClass() {
+            
+        }
+
+        public String doIets(int i) {
+           return "1";
+        }
+    }    
 }
+

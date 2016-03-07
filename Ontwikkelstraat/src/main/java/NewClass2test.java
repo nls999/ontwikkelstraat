@@ -9,5 +9,12 @@
  * @author Johan
  */
 public class NewClass2test {
+
+    private int henk = 0;
+    
+    public NewClass2test() {
+    }
+    
+    
     
 }

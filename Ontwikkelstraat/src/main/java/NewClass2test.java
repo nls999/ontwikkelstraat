@@ -11,6 +11,7 @@
 public class NewClass2test {
 
     private int henk = 0;
+    private String hans = "harry";
     
     public NewClass2test() {
     }
